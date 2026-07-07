@@ -9,6 +9,6 @@ if(isset($_POST['create']))
     include 'closeconnection.php';
     if($result)
     {
-        echo "Data inserted successfully";
+        echo "<script>alert('Category created successfully.'); window.location.href='categories.php';</script>";
     }
 }
