@@ -24,7 +24,7 @@
             <td class="border p-2"><?php echo $row['priority']; ?></td>
             <td class="border p-2"><?php echo $row['name']; ?></td>
             <td class="border p-2">
-                <a href="" class="bg-blue-500 text-white rounded-lg px-2 py-1">Edit</a>
+                <a href="editcategory.php?id=<?php echo $row['id'];?>" class="bg-blue-500 text-white rounded-lg px-2 py-1">Edit</a>
                 <a href="" class="bg-red-500 text-white rounded-lg px-2 py-1">Delete</a>
             </td>
         </tr>
