@@ -10,6 +10,7 @@ include 'closeconnection.php';
     <h2 class="text-2xl font-bold">Edit Category</h2>
     <hr class="h-1 bg-red-500">
     <form action="actioncategory.php" method="POST" class="my-3">
+        <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
         <input type="text" name="priority" value="<?php echo $row['priority']; ?>" class="w-full block border p-2 rounded-lg shadow my-5" placeholder="Enter Priority">
         <input type="text" name="name" value="<?php echo $row['name']; ?>" class="w-full block border p-2 rounded-lg shadow my-5" placeholder="Enter Category Name">
         <div class="flex justify-center gap-4">
