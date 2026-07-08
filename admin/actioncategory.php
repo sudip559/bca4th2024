@@ -27,3 +27,16 @@ if(isset($_POST['update']))
         echo "<script>alert('Category updated successfully.'); window.location.href='categories.php';</script>";
     }
 }
+
+if(isset($_GET['deleteid']))
+{
+    $id = $_GET['deleteid'];
+    $qry = "DELETE FROM categories WHERE id=$id";
+    include 'dbconnection.php';
+    $result = mysqli_query($conn, $qry);
+    include 'closeconnection.php';
+    if($result)
+    {
+        echo "<script>alert('Category deleted successfully.'); window.location.href='categories.php';</script>";
+    }
+}

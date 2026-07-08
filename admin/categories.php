@@ -25,7 +25,7 @@
             <td class="border p-2"><?php echo $row['name']; ?></td>
             <td class="border p-2">
                 <a href="editcategory.php?id=<?php echo $row['id'];?>" class="bg-blue-500 text-white rounded-lg px-2 py-1">Edit</a>
-                <a href="" class="bg-red-500 text-white rounded-lg px-2 py-1">Delete</a>
+                <a href="actioncategory.php?deleteid=<?php echo $row['id'];?>" onclick="return confirm('Are you sure you want to delete this category?');" class="bg-red-500 text-white rounded-lg px-2 py-1">Delete</a>
             </td>
         </tr>
         <?php 
